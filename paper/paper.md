@@ -84,7 +84,7 @@ users of other languages who reach the stack through a C API, as
 
 # State of the field
 
-\autoref{tab:field} summarizes the comparison. `ndarray` offers n-dimensional
+Table 1 summarizes the comparison. `ndarray` offers n-dimensional
 arrays but no AD, devices or LAPACK-class decompositions with derivatives.
 `faer` is a high quality dense linear algebra library and is used by
 `tenferro-rs` as its CPU linear algebra backend. `burn` and `candle` are
@@ -107,7 +107,7 @@ contraction order optimization, and the StableHLO `dot_general` primitive as
 the contraction vocabulary [@stablehlo]. The provenance of every component is
 recorded in the repository's provenance and citation policy.
 
-Table: Feature comparison with related libraries. TN means tensor network. {#tab:field}
+Table: Feature comparison with related libraries. TN means tensor network.
 
 | Library | Language | Storage | AD | Linalg AD rules | GPU | Dynamic-shape trace |
 |---|---|---|---|---|---|---|
