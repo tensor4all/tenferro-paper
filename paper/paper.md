@@ -18,6 +18,7 @@ authors:
   - name: Ryo Watanabe
     affiliation: 3
   - name: Jin-Guo Liu
+    orcid: 0000-0003-1635-2679
     affiliation: 4
 affiliations:
   - name: Department of Physics, Saitama University, Saitama 338-8570, Japan
@@ -27,7 +28,7 @@ affiliations:
     index: 2
   - name: Osaka University, Osaka, Japan
     index: 3
-  - name: Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China
+  - name: Thrust of Advanced Materials, Function Hub, The Hong Kong University of Science and Technology (Guangzhou), Guangzhou 511453, China
     index: 4
 date: 15 October 2026
 bibliography: paper.bib

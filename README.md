@@ -12,8 +12,9 @@ Private working repository for the JOSS submission of
 
 ## Open items before submission
 
-- Jin-Guo Liu: repository name, URL and release date of the quantum circuit simulator; ORCID.
+- Jin-Guo Liu: repository name, URL and release date of the quantum circuit simulator (ORCID and affiliation taken from the HKUST(GZ) faculty profile).
 - Ryo Watanabe: affiliation confirmation, ORCID.
+- Satoshi Terasaki: confirm ORCID 0000-0003-2345-0808.
 - AI usage disclosure: exact agent versions used, cross-check with `CONTRIBUTING.md` and `ai/` in tenferro-rs.
 - KAKENHI grant numbers in Acknowledgements.
 - Julia comparison (OMEinsum.jl, TensorOperations.jl, CUDA.jl) once the runner lands in tenferro-benchmark; then regenerate the figure.
