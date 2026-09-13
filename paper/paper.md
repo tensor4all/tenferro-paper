@@ -64,10 +64,21 @@ PyTorch and JAX [@pytorch; @jax]; in Julia by ITensors, TensorOperations and
 OMEinsum with Zygote or Enzyme for AD [@itensor; @omeinsum]. Rust has strong
 building blocks (`ndarray` for arrays, `faer` for dense linear algebra, `burn`
 and `candle` for deep learning) [@ndarray; @faer; @burn; @candle], but no layer
-that combines them into a scientific tensor stack. Projects that want Rust for
-its ownership model, its build system and its suitability for compile-time
-verification have therefore had to bind to C++ or Python runtimes, which
-reintroduces the runtime dependency they wanted to avoid.
+that combines them into a scientific tensor stack. Projects that want Rust have therefore had to
+bind to C++ or Python runtimes, which reintroduces the runtime dependency they
+wanted to avoid.
+
+Our own motivation for Rust came from porting the tensor4all stack out of
+Julia, where a growing codebase met run-time type instability and long
+compile latency [@Shinaoka2026blog]. It was sharpened by the shift to
+AI-assisted development: when an agent writes most of the code, the value of a
+language moves from how easily a human reads it to how much the compiler and
+the module system verify before execution. Ownership and static types reject a
+class of aliasing and lifetime errors at compile time, crate boundaries
+enforce layering rather than merely suggesting it, and Cargo gives one
+reproducible build with no external runtime. These properties are what make a
+large, largely agent-written numerical library auditable, and they are
+architectural reasons to have a native Rust stack rather than a binding.
 
 A second gap is shape dynamism. Adaptive algorithms such as tensor cross
 interpolation, truncated SVD sweeps and iterative solvers produce tensors whose
