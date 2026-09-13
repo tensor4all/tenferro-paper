@@ -189,10 +189,13 @@ and was revised and verified by the authors.
 
 # Acknowledgements
 
-We thank Selina Dirnböck, Markus Frankenbach and Nepomuk Ritz for their
-contributions to the surrounding tensor4all stack during their stay at Saitama
-University, and the maintainers of faer, CubeCL and strided-rs. H.S. was
-supported by JSPS KAKENHI (grant numbers TODO) and the JSPS-FWF bilateral
-program.
+We thank Lingrui Cheng, Selina Dirnböck, Markus Frankenbach and Nepomuk Ritz
+for their contributions to the surrounding tensor4all stack, and Jutho
+Haegeman (Strided.jl, TensorOperations.jl) and the ITensors.jl team (Matthew
+Fishman, Steven R. White, E. Miles Stoudenmire and Joseph Tindall), whose
+designs shaped the strided kernels and tensor network layers that
+`tenferro-rs` builds on. We also thank the maintainers of faer and CubeCL.
+H.S. was supported by JSPS KAKENHI (grant numbers TODO) and the JSPS-FWF
+bilateral program.
 
 # References
