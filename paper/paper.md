@@ -12,14 +12,24 @@ authors:
     orcid: 0000-0002-7058-8765
     corresponding: true
     affiliation: 1
+  - name: Jin-Guo Liu
+    orcid: 0000-0003-1635-2679
+    affiliation: 4
   - name: Satoshi Terasaki
     orcid: 0000-0003-2345-0808
     affiliation: 2
   - name: Ryo Watanabe
     affiliation: 3
-  - name: Jin-Guo Liu
-    orcid: 0000-0003-1635-2679
-    affiliation: 4
+  - name: Lukas Devos
+    affiliation: 5  # TODO: confirm affiliation and ORCID
+  - name: Martin Mikkelsen
+    affiliation: 6  # TODO: affiliation and ORCID
+  - name: Yusheng Zhao
+    affiliation: 4  # TODO: confirm affiliation and ORCID
+  - name: Ning-Yuan Chen
+    affiliation: 4  # TODO: confirm affiliation and ORCID
+  - name: Guo Chen
+    affiliation: 4  # TODO: confirm affiliation and ORCID
 affiliations:
   - name: Department of Physics, Saitama University, Saitama 338-8570, Japan
     index: 1
@@ -30,6 +40,10 @@ affiliations:
     index: 3
   - name: Thrust of Advanced Materials, Function Hub, The Hong Kong University of Science and Technology (Guangzhou), Guangzhou 511453, China
     index: 4
+  - name: Center for Computational Quantum Physics, Flatiron Institute, New York, NY, USA
+    index: 5
+  - name: TODO
+    index: 6
 date: 15 October 2026
 bibliography: paper.bib
 ---
@@ -173,7 +187,7 @@ the canonical source.
 
 `tenferro-rs` was made public in February 2026 and has had continuous
 development since, with more than 1500 commits, five tagged releases and four
-human contributors. It is the execution engine of `tensor4all-rs`, the Rust
+human contributors. <!-- TODO: recount contributors across tenferro-rs and its upstream crates (now at least nine) --> It is the execution engine of `tensor4all-rs`, the Rust
 implementation of tensor cross interpolation, quantics tensor trains and tree
 tensor networks, which is exposed to Julia users through `Tensor4all.jl`
 [@tensor4all-rs; @Tensor4all-jl]. Independent projects built on it include a
