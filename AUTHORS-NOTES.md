@@ -31,10 +31,12 @@ the AI usage disclosure.
 | Satoshi Terasaki | Benchmark infrastructure (tenferro-benchmark), strided, tcontract, colmat | since early 2026; mvmc-rs uses tenferro |
 | Ryo Watanabe | CpuEngine, strided, tcontract, threadteam | since May 2026 |
 | Lukas Devos | tcontract contraction engine (from his Rust prototype), Julia wrapper | tcontract commits Aug 2026; earlier Rust prototype. Confirm continued involvement |
-| Martin Mikkelsen | colmat LAPACK numerical validation suite and numerical fixes; tlinalg | Julia libraries earlier; colmat/tlinalg/tenferro Oct–Nov 2026 |
+| Martin Mikkelsen | colmat LAPACK numerical validation suite and numerical fixes; tlinalg; tenferro-examples (nqs-rbm, kdv-pinn) | Julia libraries earlier; colmat/tlinalg/tenferro Oct–Nov 2026 |
 | Yusheng Zhao | CUDA SVD driver selection (SvdOptions::driver, Xgesvdp), cuBLAS fixes | omeinsum-rs Jul 2026, tenferro Sep 2026 (issues Jul–Sep). Confirm continued involvement |
 | Ning-Yuan Chen | tcontract-benchmark (qcbench, EPYC 9575F campaigns) | since Nov 11, 2026; reaches two months by the end of January if it continues |
 | Guo Chen | CPU kernel collaboration; direction of benchmark work (write the concrete contribution) | collaboration starting; needs two months of actual contribution by submission |
+| Samuel Badr | tenferro FFT AD rules (rfft/irfft), deep reverse-mode graph fix; colmat QL/RQ, polar/QDWH, range-limit fixes; tenferro-examples nonlinear-pinn | tensor4all-rs since Jul 2026; tenferro stack since Nov 17, 2026; reaches two months by the end of January if it continues |
+| Frank Ebel | tenferro `zeros`/`ones`/`full` constructors (PR open) | since Nov 18, 2026; reaches two months by the end of January if it continues |
 
 Not authors: faer authors and contributors (cite faer); bots and AI agents.
 Candidates for the tensor4all-rs paper (C): Ken Inayoshi, Lingrui Cheng, Samuel Badr.
