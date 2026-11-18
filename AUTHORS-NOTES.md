@@ -2,7 +2,7 @@
 
 ## Authorship criteria
 
-Planned submission: mid-January 2027. An author must meet all of the following.
+Planned submission: end of January 2027, so anyone who starts contributing by the end of November 2026 can still qualify. An author must meet all of the following.
 
 1. **Contribution history of about two months or more** by the submission date.
    A single PR or issue is not enough.
@@ -33,7 +33,7 @@ the AI usage disclosure.
 | Lukas Devos | tcontract contraction engine (from his Rust prototype), Julia wrapper | tcontract commits Aug 2026; earlier Rust prototype. Confirm continued involvement |
 | Martin Mikkelsen | colmat LAPACK numerical validation suite and numerical fixes; tlinalg | Julia libraries earlier; colmat/tlinalg/tenferro Oct–Nov 2026 |
 | Yusheng Zhao | CUDA SVD driver selection (SvdOptions::driver, Xgesvdp), cuBLAS fixes | omeinsum-rs Jul 2026, tenferro Sep 2026 (issues Jul–Sep). Confirm continued involvement |
-| Ning-Yuan Chen | tcontract-benchmark (qcbench, EPYC 9575F campaigns) | since Nov 11, 2026; reaches two months by mid-January if it continues |
+| Ning-Yuan Chen | tcontract-benchmark (qcbench, EPYC 9575F campaigns) | since Nov 11, 2026; reaches two months by the end of January if it continues |
 | Guo Chen | CPU kernel collaboration; direction of benchmark work (write the concrete contribution) | collaboration starting; needs two months of actual contribution by submission |
 
 Not authors: faer authors and contributors (cite faer); bots and AI agents.
