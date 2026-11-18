@@ -15,6 +15,8 @@ Planned submission: end of January 2027, so anyone who starts contributing by th
    compared in performance against Python (PyTorch/JAX) and Julia
    implementations, and what it finds is fed back to tenferro-rs as issues or
    PRs.
+   Contributions to tensor4all-rs do not count here; they belong to the
+   tensor4all-rs paper.
 3. **Commitment for about the next year** to put effort into developing the
    tenferro ecosystem and spreading it: using it in their own projects,
    feedback, teaching, talks, or bringing in users and groups.
@@ -39,7 +41,7 @@ the AI usage disclosure.
 | Yusheng Zhao | CUDA SVD driver selection (SvdOptions::driver, Xgesvdp), cuBLAS fixes | omeinsum-rs Jul 2026, tenferro Sep 2026 (issues Jul–Sep). Confirm continued involvement |
 | Ning-Yuan Chen | tcontract-benchmark (qcbench, EPYC 9575F campaigns) | since Nov 11, 2026; reaches two months by the end of January if it continues |
 | Guo Chen | CPU kernel collaboration; direction of benchmark work (write the concrete contribution) | collaboration starting; needs two months of actual contribution by submission |
-| Samuel Badr | tenferro FFT AD rules (rfft/irfft), deep reverse-mode graph fix; colmat QL/RQ, polar/QDWH, range-limit fixes; tenferro-examples nonlinear-pinn | tensor4all-rs since Jul 2026; tenferro stack since Nov 17, 2026; reaches two months by the end of January if it continues |
+| Samuel Badr | tenferro FFT AD rules (rfft/irfft), deep reverse-mode graph fix; colmat QL/RQ, polar/QDWH, range-limit fixes; tenferro-examples nonlinear-pinn | tenferro stack since Nov 17, 2026 (tensor4all-rs since Jul 2026 does not count); reaches two months by the end of January if it continues |
 | Frank Ebel | tenferro `zeros`/`ones`/`full` constructors (PR open) | since Nov 18, 2026; reaches two months by the end of January if it continues |
 
 Not authors: faer authors and contributors (cite faer); bots and AI agents.
