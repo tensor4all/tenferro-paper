@@ -11,6 +11,10 @@ Planned submission: end of January 2027, so anyone who starts contributing by th
    benchmark repositories) or tenferro-examples: code, design, benchmarks, validation, or sustained
    real use of the tenferro ecosystem with feedback. Design direction counts
    (JOSS accepts non-code contributions).
+   Contributions to tenferro-examples count only when the example is also
+   compared in performance against Python (PyTorch/JAX) and Julia
+   implementations, and what it finds is fed back to tenferro-rs as issues or
+   PRs.
 3. **Commitment for about the next year** to put effort into developing the
    tenferro ecosystem and spreading it: using it in their own projects,
    feedback, teaching, talks, or bringing in users and groups.
