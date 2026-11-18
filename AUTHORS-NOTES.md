@@ -6,9 +6,9 @@ Planned submission: end of January 2027, so anyone who starts contributing by th
 
 1. **Contribution history of about two months or more** by the submission date.
    A single PR or issue is not enough.
-2. **Substantial contribution** to tenferro-rs or its upstream crates (strided,
+2. **Substantial contribution** to tenferro-rs, its upstream crates (strided,
    tcontract, tlinalg, threadteam, colmat/t4a-faer, t4a-gemm, t4a-gpu-backend,
-   benchmark repositories): code, design, benchmarks, validation, or sustained
+   benchmark repositories) or tenferro-examples: code, design, benchmarks, validation, or sustained
    real use of the tenferro ecosystem with feedback. Design direction counts
    (JOSS accepts non-code contributions).
 3. **Commitment for about the next year** to put effort into developing the
