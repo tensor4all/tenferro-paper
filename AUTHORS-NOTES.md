@@ -1,11 +1,20 @@
-# Author list notes (updated 2026-11-18)
+# Author list notes (updated 2026-11-19)
+
+We want to give credit to the people who build the tenferro ecosystem. If you
+contribute to tenferro-rs, its upstream crates, or tenferro-examples, you can
+become a co-author of the tenferro paper. See [How to apply](#how-to-apply).
 
 ## Authorship criteria
 
-Planned submission: end of January 2027, so anyone who starts contributing by the end of November 2026 can still qualify. An author must meet all of the following.
+Planned submission: end of January 2027, so anyone who starts contributing by
+the end of November 2026 can still qualify. The lead developer
+(H. Shinaoka) makes the final decision on who is listed as an author, using
+the following criteria.
 
 1. **Contribution history of about two months or more** by the submission date.
-   A single PR or issue is not enough.
+   Two months is a guideline, not a hard cutoff: a significant contribution
+   made in less than two months is also considered. A single small PR or issue
+   is not enough.
 2. **Substantial contribution** to tenferro-rs, its upstream crates (strided,
    tcontract, tlinalg, threadteam, colmat/t4a-faer, t4a-gemm, t4a-gpu-backend,
    benchmark repositories) or tenferro-examples: code, design, benchmarks, validation, or sustained
@@ -24,9 +33,28 @@ Planned submission: end of January 2027, so anyone who starts contributing by th
    the whole paper (JOSS policy).
 
 Ask each candidate about (3) and (4) together with affiliation and ORCID.
-People who do not meet the criteria are thanked in the Acknowledgements and can
+People who are not listed as authors are thanked in the Acknowledgements and can
 become authors of later papers. AI agents and bots are never authors; they go in
 the AI usage disclosure.
+
+## How to apply
+
+If you want to be an author, open a pull request to this repository that adds
+or updates your row in the [Candidates](#candidates) table. In the pull request
+description, state clearly:
+
+- **What you have contributed so far**: the repositories, and links to your
+  PRs, issues, commits, benchmarks, or design discussions. Say what each one
+  achieved (for example a new feature, a performance gain with numbers, a bug
+  fixed, a validation suite), not only that it was merged.
+- **Since when** you have been contributing, and what you plan to contribute
+  before submission.
+- **Commitment** (criterion 3): how you intend to use, develop, or spread the
+  tenferro ecosystem over about the next year.
+- **Consent** (criterion 4), your affiliation, and your ORCID.
+
+The lead developer reviews the pull request and decides. Opening one is welcome
+at any time before submission; you can update it as your contribution grows.
 
 ## Candidates
 
@@ -40,7 +68,7 @@ the AI usage disclosure.
 | Martin Mikkelsen | colmat LAPACK numerical validation suite and numerical fixes; tlinalg; tenferro-examples (nqs-rbm, kdv-pinn) | Julia libraries earlier; colmat/tlinalg/tenferro Oct–Nov 2026 |
 | Yusheng Zhao | CUDA SVD driver selection (SvdOptions::driver, Xgesvdp), cuBLAS fixes | omeinsum-rs Jul 2026, tenferro Sep 2026 (issues Jul–Sep). Confirm continued involvement |
 | Ning-Yuan Chen | tcontract-benchmark (qcbench, EPYC 9575F campaigns) | since Nov 11, 2026; reaches two months by the end of January if it continues |
-| Guo Chen | CPU kernel collaboration; direction of benchmark work (write the concrete contribution) | collaboration starting; needs two months of actual contribution by submission |
+| Guo Chen | CPU kernel collaboration; direction of benchmark work (write the concrete contribution) | collaboration starting; needs an actual contribution by submission |
 | Samuel Badr | tenferro FFT AD rules (rfft/irfft), deep reverse-mode graph fix; colmat QL/RQ, polar/QDWH, range-limit fixes; tenferro-examples nonlinear-pinn | tenferro stack since Nov 17, 2026 (tensor4all-rs since Jul 2026 does not count); reaches two months by the end of January if it continues |
 | Frank Ebel | tenferro `zeros`/`ones`/`full` constructors (PR open) | since Nov 18, 2026; reaches two months by the end of January if it continues |
 
