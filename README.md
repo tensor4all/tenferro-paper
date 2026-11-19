@@ -1,6 +1,51 @@
 # tenferro-rs JOSS paper (draft)
 
-Private working repository for the JOSS submission of
+## 🚀 Join us in building a new computational physics ecosystem for the agentic AI era
+
+AI agents write the code; humans own the design and the verification. This way of working is changing how scientific software for computational physics is built.
+
+**tenferro** is a Rust tensor computing foundation designed from scratch for this era. With automatic differentiation, CPU/GPU backends, and fast tensor contraction and linear algebra, it delivers **performance that goes head-to-head with PyTorch and JAX**, in a single Rust stack with no Python runtime.
+
+**From tensor networks and neural networks to electronic structure and quantum many-body computation**: our goal is to let you write the full range of computational physics methods on one shared foundation, fast and verifiable.
+
+We are looking for people to grow this ecosystem with us.
+
+- Contributions to tenferro-rs, its upstream crates (strided, tcontract, tlinalg, colmat, ...), and tenferro-examples are all welcome: code, design, benchmarks, numerical validation, and feedback from real use.
+- Contributors who make a substantial contribution can become **co-authors of the JOSS paper** (planned submission: end of January 2027).
+- See [AUTHORS-NOTES.md](AUTHORS-NOTES.md) for the criteria and how to apply. To apply, open a pull request to this repository that states clearly what you have contributed.
+
+## 🚀 一緒に、Agentic AI 時代の計算物理エコシステムを切り開きませんか？
+
+AI エージェントがコードを書き、人間が設計と検証を担う。そんな開発スタイルは、計算物理のソフトウェアの作り方そのものを変えつつあります。
+
+**tenferro** は、その時代に合わせてゼロから設計した Rust 製のテンソル計算基盤です。自動微分、CPU/GPU バックエンド、高速なテンソル縮約と線形代数をそろえ、**PyTorch や JAX と真っ向勝負できる性能**を、Python ランタイムなしの単一の Rust スタックで実現します。
+
+**テンソルネットワーク、ニューラルネットワーク、電子構造計算から量子多体計算まで**。計算物理のさまざまな手法を、ひとつの共通基盤の上で、速く、検証可能な形で書けるようにすることが私たちの目標です。
+
+私たちは、このエコシステムを一緒に育てる仲間を探しています。
+
+- tenferro-rs や上流クレート（strided, tcontract, tlinalg, colmat など）、tenferro-examples への貢献：コード、設計、ベンチマーク、数値検証、実際に使ってのフィードバック。どれも大歓迎です。
+- 一定の貢献をした方は、**JOSS 論文の共著者**になれます（2027年1月末投稿予定）。
+- 条件と申請方法は [AUTHORS-NOTES.md](AUTHORS-NOTES.md) を見てください。申請は、このリポジトリに貢献内容を明記した PR を立てるだけです。
+
+## 🚀 一起开拓 Agentic AI 时代的计算物理新生态
+
+AI 智能体编写代码，人类负责设计与验证。这种开发方式正在改变计算物理软件的构建方式本身。
+
+**tenferro** 是为这个时代从零设计的 Rust 张量计算基础库。它提供自动微分、CPU/GPU 后端以及高速的张量缩并与线性代数，以不依赖 Python 运行时的单一 Rust 技术栈，实现**足以与 PyTorch 和 JAX 正面较量的性能**。
+
+**从张量网络、神经网络，到电子结构计算与量子多体计算**：我们的目标是让计算物理的各种方法都能在同一个共同基础上，以快速且可验证的方式编写。
+
+我们正在寻找与我们一起培育这个生态的伙伴。
+
+- 欢迎为 tenferro-rs、其上游 crate（strided、tcontract、tlinalg、colmat 等）以及 tenferro-examples 做出贡献：代码、设计、基准测试、数值验证、实际使用后的反馈都非常欢迎。
+- 做出实质性贡献的人可以成为 **JOSS 论文的共同作者**（计划于 2027 年 1 月底投稿）。
+- 作者资格条件与申请方法请参见 [AUTHORS-NOTES.md](AUTHORS-NOTES.md)。申请方式：向本仓库提交一个 PR，并在其中写明你的贡献内容。
+
+---
+
+
+Working repository for the JOSS submission of
 [tenferro-rs](https://github.com/tensor4all/tenferro-rs).
 
 - `paper/paper.md`, `paper/paper.bib`: the manuscript (JOSS format).
