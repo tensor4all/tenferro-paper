@@ -31,8 +31,13 @@ the following criteria.
    feedback, teaching, talks, or bringing in users and groups.
 4. **Consent and accountability.** Agree to be listed and to be accountable for
    the whole paper (JOSS policy).
+5. **Membership in the Matrix community.** Join the tenferro Matrix room,
+   [#tenferro-tensor4all:matrix.org](https://matrix.to/#/#tenferro-tensor4all:matrix.org), in the tensor4all space, and take part in the
+   discussion there. Design discussions and contributor coordination happen
+   in this room. How to set up Matrix:
+   <https://tensor4all.org/matrix>.
 
-Ask each candidate about (3) and (4) together with affiliation and ORCID.
+Ask each candidate about (3), (4) and (5) together with affiliation and ORCID.
 People who are not listed as authors are thanked in the Acknowledgements and can
 become authors of later papers. AI agents and bots are never authors; they go in
 the AI usage disclosure.
@@ -52,6 +57,7 @@ description, state clearly:
 - **Commitment** (criterion 3): how you intend to use, develop, or spread the
   tenferro ecosystem over about the next year.
 - **Consent** (criterion 4), your affiliation, and your ORCID.
+- **Your Matrix ID** (criterion 5), for example `@name:matrix.org`.
 
 The lead developer reviews the pull request and decides. Opening one is welcome
 at any time before submission; you can update it as your contribution grows.
