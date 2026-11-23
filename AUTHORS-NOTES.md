@@ -45,6 +45,26 @@ People who are not listed as authors are thanked in the Acknowledgements and can
 become authors of later papers. AI agents and bots are never authors; they go in
 the AI usage disclosure.
 
+## Future papers: when the contributor base grows
+
+For this paper (tenferro v1.0) every contributor who meets the criteria above
+is a named author, and each author's contribution is written out in Author
+contributions. That works while the candidates number in the tens.
+
+When contributors number in the many tens or hundreds, a later paper (for
+example tenferro v2.0, or one covering tenferro-sci-rs as well) will follow the
+model of the SciPy 1.0 paper ([arXiv:1907.10121](https://arxiv.org/abs/1907.10121);
+Nature Methods 17, 261 (2020)), which uses three tiers:
+
+1. **Named authors, chosen by role**: those who lead the design, the main
+   maintainers, and those who write the manuscript.
+2. **A consortium** ("tenferro Contributors") listing by name everyone who
+   meets the criteria above; the criteria then decide consortium membership.
+3. **Acknowledgements** for everyone else who contributed, down to a single
+   issue or comment.
+
+Before using a consortium, check that the target journal accepts one.
+
 ## How to apply
 
 If you want to be an author, open a pull request to this repository that adds
