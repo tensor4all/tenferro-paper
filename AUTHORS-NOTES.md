@@ -77,8 +77,9 @@ at any time before submission; you can update it as your contribution grows.
 | Guo Chen | CPU kernel collaboration; direction of benchmark work (write the concrete contribution) | collaboration starting; needs an actual contribution by submission |
 | Samuel Badr | tenferro FFT AD rules (rfft/irfft), deep reverse-mode graph fix; colmat QL/RQ, polar/QDWH, range-limit fixes; tenferro-examples nonlinear-pinn | tenferro stack since Nov 17, 2026 (tensor4all-rs since Jul 2026 does not count); reaches two months by the end of January if it continues |
 | Frank Ebel | tenferro `zeros`/`ones`/`full` constructors (PR open) | since Nov 18, 2026; reaches two months by the end of January if it continues |
+| Ken Inayoshi | Sustained real use of tenferro through tensor4all-rs with feedback: tenferro-rs issues #2563 (Hermitian matrix functions with Daleckii–Krein AD), #2170 (BufferPool slowdown), #2049 (complex pinv), #2599 (single-tensor stack/concatenate); upstream bugs found from tensor4all-rs: t4a-faer SVD/QR panics with several threads (tensor4all-rs#1008, #1014), slowdowns after the tenferro migration (#328, #336), einsum label permutation (#281), mixed-dtype SVD and einsum plan-cache thrashing (#890, #891). No tenferro code; his tensor4all-rs code does not count here | feedback on the tenferro stack since Mar 2026; tensor4all-rs since Jan 2026. Write the feedback contribution explicitly in Author contributions |
 
 Not authors: faer authors and contributors (cite faer); bots and AI agents.
-Candidates for the tensor4all-rs paper (C): Ken Inayoshi, Lingrui Cheng, Samuel Badr.
+Candidates for the tensor4all-rs paper (C): Ken Inayoshi (also a candidate here, by feedback), Lingrui Cheng, Samuel Badr.
 
 To collect from each co-author: consent, affiliation, ORCID.
