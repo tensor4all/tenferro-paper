@@ -1,7 +1,8 @@
 # Author list notes (updated 2026-11-19)
 
 We want to give credit to the people who build the tenferro ecosystem. If you
-contribute to tenferro-rs, its upstream crates, or tenferro-examples, you can
+contribute to tenferro-rs, its upstream crates, tenferro-sci-rs or
+tenferro-examples, you can
 become a co-author of the tenferro paper. See [How to apply](#how-to-apply).
 
 ## Authorship criteria
@@ -17,7 +18,9 @@ the following criteria.
    is not enough.
 2. **Substantial contribution** to tenferro-rs, its upstream crates (strided,
    tcontract, tlinalg, threadteam, colmat/t4a-faer, t4a-gemm, t4a-gpu-backend,
-   benchmark repositories) or tenferro-examples: code, design, benchmarks, validation, or sustained
+   benchmark repositories), [tenferro-sci-rs](https://github.com/tensor4all/tenferro-sci-rs)
+   (the SciPy-like layer on tenferro, where tenferro-fft is also moving) or
+   tenferro-examples: code, design, benchmarks, validation, or sustained
    real use of the tenferro ecosystem with feedback. Design direction counts
    (JOSS accepts non-code contributions).
    Contributions to tenferro-examples count only when the example is also

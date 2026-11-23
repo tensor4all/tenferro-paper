@@ -10,7 +10,7 @@ AI agents write the code; humans own the design and the verification. This way o
 
 We are looking for people to grow this ecosystem with us.
 
-- Contributions to tenferro-rs, its upstream crates (strided, tcontract, tlinalg, colmat, ...), and tenferro-examples are all welcome: code, design, benchmarks, numerical validation, and feedback from real use.
+- Contributions to tenferro-rs, its upstream crates (strided, tcontract, tlinalg, colmat, ...), [tenferro-sci-rs](https://github.com/tensor4all/tenferro-sci-rs) (SciPy-like algorithms on tenferro), and tenferro-examples are all welcome: code, design, benchmarks, numerical validation, and feedback from real use.
 - Contributors who make a substantial contribution can **join the author list when we submit the tenferro software paper** (planned submission: end of January 2027; the journal is not fixed and acceptance is not guaranteed).
 - Join the conversation in the tenferro Matrix room, [#tenferro-tensor4all:matrix.org](https://matrix.to/#/#tenferro-tensor4all:matrix.org). Membership in this community is one of the authorship criteria.
 - See [AUTHORS-NOTES.md](AUTHORS-NOTES.md) for the criteria and how to apply. To apply, open a pull request to this repository that states clearly what you have contributed.
@@ -25,7 +25,7 @@ AI エージェントがコードを書き、人間が設計と検証を担う�
 
 私たちは、このエコシステムを一緒に育てる仲間を探しています。
 
-- tenferro-rs や上流クレート（strided, tcontract, tlinalg, colmat など）、tenferro-examples への貢献：コード、設計、ベンチマーク、数値検証、実際に使ってのフィードバック。どれも大歓迎です。
+- tenferro-rs や上流クレート（strided, tcontract, tlinalg, colmat など）、[tenferro-sci-rs](https://github.com/tensor4all/tenferro-sci-rs)（tenferro 上の SciPy 相当のアルゴリズム集）、tenferro-examples への貢献：コード、設計、ベンチマーク、数値検証、実際に使ってのフィードバック。どれも大歓迎です。
 - 一定の貢献をした方は、tenferro のソフトウェア論文に**共著者として加わって投稿**できます（2027年1月末投稿予定。投稿先の雑誌や採択は保証されません）。
 - tenferro の Matrix ルーム [#tenferro-tensor4all:matrix.org](https://matrix.to/#/#tenferro-tensor4all:matrix.org) に参加してください。このコミュニティへの参加は、著者になる条件のひとつです。
 - 条件と申請方法は [AUTHORS-NOTES.md](AUTHORS-NOTES.md) を見てください。申請は、このリポジトリに貢献内容を明記した PR を立てるだけです。
@@ -40,7 +40,7 @@ AI 智能体编写代码，人类负责设计与验证。这种开发方式正�
 
 我们正在寻找与我们一起培育这个生态的伙伴。
 
-- 欢迎为 tenferro-rs、其上游 crate（strided、tcontract、tlinalg、colmat 等）以及 tenferro-examples 做出贡献：代码、设计、基准测试、数值验证、实际使用后的反馈都非常欢迎。
+- 欢迎为 tenferro-rs、其上游 crate（strided、tcontract、tlinalg、colmat 等）、[tenferro-sci-rs](https://github.com/tensor4all/tenferro-sci-rs)（基于 tenferro 的类 SciPy 算法库）以及 tenferro-examples 做出贡献：代码、设计、基准测试、数值验证、实际使用后的反馈都非常欢迎。
 - 做出实质性贡献的人可以**作为共同作者参与 tenferro 软件论文的投稿**（计划于 2027 年 1 月底投稿；投稿期刊与录用均不作保证）。
 - 请加入 tenferro 的 Matrix 聊天室 [#tenferro-tensor4all:matrix.org](https://matrix.to/#/#tenferro-tensor4all:matrix.org)。加入该社区是成为作者的条件之一。
 - 作者资格条件与申请方法请参见 [AUTHORS-NOTES.md](AUTHORS-NOTES.md)。申请方式：向本仓库提交一个 PR，并在其中写明你的贡献内容。
