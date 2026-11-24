@@ -1,4 +1,4 @@
-# Author list notes (updated 2026-11-19)
+# Author list notes (updated 2026-11-25)
 
 We want to give credit to the people who build the tenferro ecosystem. If you
 contribute to tenferro-rs, its upstream crates, tenferro-sci-rs or
@@ -7,8 +7,8 @@ become a co-author of the tenferro paper. See [How to apply](#how-to-apply).
 
 ## Authorship criteria
 
-Planned submission: end of January 2027, so anyone who starts contributing by
-the end of November 2026 can still qualify. The lead developer
+Planned submission: end of March 2027 (see [Submission plan](#submission-plan)),
+so anyone who starts contributing by the end of January 2027 can still qualify. The lead developer
 (H. Shinaoka) makes the final decision on who is listed as an author, using
 the following criteria.
 
@@ -22,7 +22,7 @@ the following criteria.
    (the SciPy-like layer on tenferro, where tenferro-fft is also moving) or
    tenferro-examples: code, design, benchmarks, validation, or sustained
    real use of the tenferro ecosystem with feedback. Design direction counts
-   (JOSS accepts non-code contributions).
+   (non-code contributions are accepted).
    Contributions to tenferro-examples count only when the example is also
    compared in performance against Python (PyTorch/JAX) and Julia
    implementations, and what it finds is fed back to tenferro-rs as issues or
@@ -33,7 +33,7 @@ the following criteria.
    tenferro ecosystem and spreading it: using it in their own projects,
    feedback, teaching, talks, or bringing in users and groups.
 4. **Consent and accountability.** Agree to be listed and to be accountable for
-   the whole paper (JOSS policy).
+   the whole paper.
 5. **Membership in the Matrix community.** Join the tenferro Matrix room,
    [#tenferro-tensor4all:matrix.org](https://matrix.to/#/#tenferro-tensor4all:matrix.org), in the tensor4all space, and take part in the
    discussion there. Design discussions and contributor coordination happen
@@ -44,6 +44,50 @@ Ask each candidate about (3), (4) and (5) together with affiliation and ORCID.
 People who are not listed as authors are thanked in the Acknowledgements and can
 become authors of later papers. AI agents and bots are never authors; they go in
 the AI usage disclosure.
+
+## Submission plan
+
+- **Journal: [SciPost Physics Codebases](https://scipost.org/SciPostPhysCodeb/about),
+  submission at the end of March 2027.** If it is rejected, we revise using the
+  public referee reports and submit to Computer Physics Communications (CPC),
+  which asks for nearly the same material. SoftwareX (3000-word limit) and JOSS
+  are kept as further fallbacks.
+- **Scope: tenferro-rs only.** [tenferro-sci-rs](https://github.com/tensor4all/tenferro-sci-rs)
+  is described as the dogfooding ground, still in development: a downstream
+  library written against tenferro's public API only. The gaps it exposed in
+  tenferro (control flow in traced programs, core operations, DCT/DST, the
+  public API) and how they were fixed are evidence that the design is
+  extensible. Claims about tenferro-sci-rs are limited to what exists at
+  submission; it gets its own paper once it matures.
+- **What the manuscript says: only what does not go stale.** The problem
+  tenferro solves, the design decisions and why (eager and traced execution,
+  extensions through ExtensionOp, the engine passed on every call, pure Rust,
+  downstream code on the public API only), and how correctness is checked.
+  API usage, feature and hardware tables stay in the documentation, README and
+  tenferro-examples, linked from the paper. Benchmark numbers name the release
+  tag they were measured on and come with scripts that reproduce them.
+- **What Codebases requires** (acceptance criteria on the journal's About
+  page): benchmarking tests, at least one example application presented in
+  detail, high programming standards, the added value over existing software,
+  a demonstrable need, and complete documentation for installing and running.
+  The userguide and the code release each get a DOI; later code releases go
+  through a short refereeing round, which suits a library that keeps
+  changing. Referee reports are public.
+- **Use of AI** ([SciPost Terms and Conditions](https://scipost.org/journals/journals_terms_and_conditions#GenAI),
+  "Use of Generative Artificial Intelligence", added in March 2026):
+  - The manuscript is written by the human authors. AI is used at most for
+    text polishing and light editing; the rules say that use beyond that is
+    likely impermissible.
+  - AI use in writing the code (coding agents under human design, review and
+    validation) is disclosed in detail in the Acknowledgements: which tools,
+    how, and for what. The rules ask for that disclosure and forbid blanket
+    delegation, so the disclosure describes how humans direct and check the
+    work.
+  - Where "light editing" ends is not defined. Before submission we ask the
+    SciPost editorial office with a concrete description of our workflow, and
+    keep the answer.
+- **Format:** the current draft in `paper/` is in JOSS format and moves to the
+  SciPost LaTeX template.
 
 ## Future papers: when the contributor base grows
 
@@ -96,10 +140,10 @@ at any time before submission; you can update it as your contribution grows.
 | Lukas Devos | tcontract contraction engine (from his Rust prototype), Julia wrapper | tcontract commits Aug 2026; earlier Rust prototype. Confirm continued involvement |
 | Martin Mikkelsen | colmat LAPACK numerical validation suite and numerical fixes; tlinalg; tenferro-examples (nqs-rbm, kdv-pinn) | Julia libraries earlier; colmat/tlinalg/tenferro Oct–Nov 2026 |
 | Yusheng Zhao | CUDA SVD driver selection (SvdOptions::driver, Xgesvdp), cuBLAS fixes | omeinsum-rs Jul 2026, tenferro Sep 2026 (issues Jul–Sep). Confirm continued involvement |
-| Ning-Yuan Chen | tcontract-benchmark (qcbench, EPYC 9575F campaigns) | since Nov 11, 2026; reaches two months by the end of January if it continues |
+| Ning-Yuan Chen | tcontract-benchmark (qcbench, EPYC 9575F campaigns) | since Nov 11, 2026; reaches two months well before submission if it continues |
 | Guo Chen | CPU kernel collaboration; direction of benchmark work (write the concrete contribution) | collaboration starting; needs an actual contribution by submission |
-| Samuel Badr | tenferro FFT AD rules (rfft/irfft), deep reverse-mode graph fix; colmat QL/RQ, polar/QDWH, range-limit fixes; tenferro-examples nonlinear-pinn | tenferro stack since Nov 17, 2026 (tensor4all-rs since Jul 2026 does not count); reaches two months by the end of January if it continues |
-| Frank Ebel | tenferro `zeros`/`ones`/`full` constructors (PR open) | since Nov 18, 2026; reaches two months by the end of January if it continues |
+| Samuel Badr | tenferro FFT AD rules (rfft/irfft), deep reverse-mode graph fix; colmat QL/RQ, polar/QDWH, range-limit fixes; tenferro-examples nonlinear-pinn | tenferro stack since Nov 17, 2026 (tensor4all-rs since Jul 2026 does not count); reaches two months well before submission if it continues |
+| Frank Ebel | tenferro `zeros`/`ones`/`full` constructors (PR open) | since Nov 18, 2026; reaches two months well before submission if it continues |
 | Ken Inayoshi | Sustained real use of tenferro through tensor4all-rs with feedback: tenferro-rs issues #2563 (Hermitian matrix functions with Daleckii–Krein AD), #2170 (BufferPool slowdown), #2049 (complex pinv), #2599 (single-tensor stack/concatenate); upstream bugs found from tensor4all-rs: t4a-faer SVD/QR panics with several threads (tensor4all-rs#1008, #1014), slowdowns after the tenferro migration (#328, #336), einsum label permutation (#281), mixed-dtype SVD and einsum plan-cache thrashing (#890, #891). No tenferro code; his tensor4all-rs code does not count here | feedback on the tenferro stack since Mar 2026; tensor4all-rs since Jan 2026. Write the feedback contribution explicitly in Author contributions |
 
 Not authors: faer authors and contributors (cite faer); bots and AI agents.
