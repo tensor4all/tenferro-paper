@@ -130,6 +130,37 @@ needs evidence in the repository before it goes into the text.
   that no per-machine build is needed for the MPICH and Open MPI families;
   otherwise it states the MPIwrapper step.
 
+- **One binary, the right SIMD on every CPU.** A binary for a Python wheel or
+  a Julia JLL is built once on a build host and runs on CPUs with different
+  SIMD sets (SSE2 only, AVX2, AVX-512, NEON, SME). Building with
+  `target-cpu=native` ties the binary to the build host; building for the
+  baseline target loses the wide SIMD units. The stack's kernels choose their
+  SIMD path at run time instead: t4a-gemm checks `avx512f`, `fma`, `neon` and
+  the Apple SME features per call path (`__select_gemm_fn` in
+  `gemm-common/src/gemm.rs`), colmat dispatches through pulp, and strided-rs
+  through `pulp::Arch::dispatch`. So one baseline build can be shipped and
+  still use the wide units where they exist. MKL and OpenBLAS (with
+  `DYNAMIC_ARCH`) also dispatch at run time; the difference is that our
+  dispatch covers every kernel of the stack, including tensor-level ones, and
+  needs no vendor library in the wheel or JLL.
+- **Evidence we have now** (t4a-gemm 29b5b46, colmat-rs 81560db):
+  - the run-time checks above exist in t4a-gemm, colmat and strided-rs;
+  - Apple SME kernels are compiled only for Apple `aarch64` with the
+    `apple-sme` feature and taken only when the run-time probe finds `FEAT_SME`
+    and the needed precision feature.
+- **Gap to close first:** AVX-512 paths are behind the `x86-v4` feature in
+  t4a-gemm and colmat and are not on by default. In colmat it stays off because
+  `pulp/x86-v4` gives non-finite factors in some tests on one host
+  (tensor4all/faer#86). A default build therefore uses AVX2 on an AVX-512 CPU.
+  Until this is fixed, the claim is "AVX2, NEON and SME chosen at run time".
+- **Evidence still missing:**
+  - the same baseline-target build benchmarked against a `target-cpu=native`
+    build on AVX2, AVX-512 and Apple Silicon hosts, showing the same kernel
+    speed;
+  - a check that no crate in the stack sets `target-cpu` or global
+    `target-feature` flags in the published build;
+  - whether the colmat-benchmark numbers were taken with `x86-v4` on or off.
+
 ## Future papers: when the contributor base grows
 
 For this paper (tenferro v1.0) every contributor who meets the criteria above
