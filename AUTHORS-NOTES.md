@@ -151,7 +151,8 @@ needs evidence in the repository before it goes into the text.
 - **Gap to close first:** AVX-512 paths are behind the `x86-v4` feature in
   t4a-gemm and colmat and are not on by default. In colmat it stays off because
   `pulp/x86-v4` gives non-finite factors in some tests on one host
-  (tensor4all/faer#86). A default build therefore uses AVX2 on an AVX-512 CPU.
+  (tensor4all/faer#86). Tracked as a bug in
+  [colmat-rs#39](https://github.com/tensor4all/colmat-rs/issues/39). A default build therefore uses AVX2 on an AVX-512 CPU.
   Until this is fixed, the claim is "AVX2, NEON and SME chosen at run time".
 - **Evidence still missing:**
   - the same baseline-target build benchmarked against a `target-cpu=native`
