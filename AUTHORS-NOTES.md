@@ -123,8 +123,12 @@ needs evidence in the repository before it goes into the text.
   - one Julia process that runs MPI.jl and tenferro on the same communicator,
     and the same for mpi4py;
   - a hosted or scheduled CI lane for the runtime MPI backend.
-- rsmpi-rt is marked experimental and MPIwrapper is an extra build step on
-  each site. The paper states both.
+- rsmpi-rt is marked experimental. The current runtime backend needs
+  MPIwrapper, built once per site. The plan in tenferro-rs#2735 removes it: a
+  backend that loads the native `libmpi` and detects its ABI family (MPICH or
+  Open MPI), as MPI.jl does. If that lands before submission, the paper can say
+  that no per-machine build is needed for the MPICH and Open MPI families;
+  otherwise it states the MPIwrapper step.
 
 ## Future papers: when the contributor base grows
 
