@@ -1,4 +1,4 @@
-# Author list notes (updated 2026-11-25)
+# Author list notes (updated 2026-11-26)
 
 We want to give credit to the people who build the tenferro ecosystem. If you
 contribute to tenferro-rs, its upstream crates, tenferro-sci-rs or
@@ -88,6 +88,42 @@ the AI usage disclosure.
     keep the answer.
 - **Format:** the current draft in `paper/` is in JOSS format and moves to the
   SciPost LaTeX template.
+
+## Arguments for the manuscript
+
+Points that answer "what does tenferro do that the alternatives do not". Each
+needs evidence in the repository before it goes into the text.
+
+- **One code base from a laptop to an HPC system.** tenferro builds with
+  `cargo` alone. The libraries that only a site or a vendor can provide (MPI,
+  HDF5, CUDA) are loaded at run time instead of linked at build time
+  ([rsmpi-rt](https://github.com/tensor4all/rsmpi-rt) through MPItrampoline's
+  MPIABI, [hdf5-rt](https://github.com/tensor4all/hdf5-rt) through dlopen). The
+  same build runs on a laptop and on a cluster, where it uses the site's MPI and
+  HDF5. Nothing is rebuilt per machine, and no MPI headers, C compiler or
+  libclang are needed to build it.
+- **It lives inside a Julia or Python process.** Because MPI and HDF5 are found
+  at run time, tenferro can use the libraries that MPI.jl or mpi4py and HDF5.jl
+  or h5py have already loaded, instead of bringing a second copy that conflicts
+  with them. The MPI adapter never calls `MPI_Init` or `MPI_Finalize` and does
+  not own communicators, so a host language can hand it the communicator it
+  already uses. PyTorch and JAX bring their own runtime; ITensors and OMEinsum
+  need the Julia runtime. tenferro is the one in this comparison that a Julia
+  or Python code can call as an ordinary library and share MPI and HDF5 with.
+- **Evidence we have now** (tenferro-rs main, 2026-11-26):
+  - `tenferro-mpi` has a `runtime` feature (rsmpi-rt `mpi-rt-sys-backend`) with
+    its own point-to-point test (`mpi_p2p_runtime`). It needs MPIwrapper built
+    against the system MPI, so it runs locally only, not in hosted CI.
+  - `tenferro-hdf5` round-trips files with h5py in a gated interoperability
+    test; Tensor4all.jl calls HDF5 through the C API next to HDF5.jl.
+- **Evidence still missing:**
+  - the same build run on a laptop and on at least one cluster with the site
+    MPI, recorded with versions;
+  - one Julia process that runs MPI.jl and tenferro on the same communicator,
+    and the same for mpi4py;
+  - a hosted or scheduled CI lane for the runtime MPI backend.
+- rsmpi-rt is marked experimental and MPIwrapper is an extra build step on
+  each site. The paper states both.
 
 ## Future papers: when the contributor base grows
 
