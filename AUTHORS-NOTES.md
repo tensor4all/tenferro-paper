@@ -116,7 +116,8 @@ needs evidence in the repository before it goes into the text.
     against the system MPI, so it runs locally only, not in hosted CI.
   - `tenferro-hdf5` round-trips files with h5py in a gated interoperability
     test; Tensor4all.jl calls HDF5 through the C API next to HDF5.jl.
-- **Evidence still missing:**
+- **Evidence still missing:** (tracked in
+  [tenferro-rs#2735](https://github.com/tensor4all/tenferro-rs/issues/2735))
   - the same build run on a laptop and on at least one cluster with the site
     MPI, recorded with versions;
   - one Julia process that runs MPI.jl and tenferro on the same communicator,
